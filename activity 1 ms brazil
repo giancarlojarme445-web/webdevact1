@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+    int studentID;
+    int age;
+    float height;
+    float quiz1, quiz2;
+
+    //Ask for student's ID
+    printf("Enter student's ID number: ");
+    scanf("%d", &studentID);
+
+    //Ask for student's age
+    printf("Enter student's age: ");
+    scanf("%d", &age);
+
+    //Ask for student's height
+    printf("Enter student's height in meter: ");
+    scanf("%f", &height);
+
+    //Ask for quiz scores
+    printf("Enter student's first quiz score: ");
+    scanf("%f", &quiz1);
+
+    printf("Enter student's second quiz score: ");
+    scanf("%f", &quiz2);
+
+    //Display the entered information
+    printf("\n--- Students Information ---\n");
+    printf("ID Number: %d\n", studentID);
+    printf("Age: %d\n", age);
+    printf("Height: %.2f meters\n", height);
+    printf("Quiz 1 Score: %.2f\n", quiz1);
+    printf("Quiz 2 Score: %.2f\n", quiz2);
+
+    return 0;
+
+}
