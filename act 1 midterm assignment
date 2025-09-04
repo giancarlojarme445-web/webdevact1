@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giancarlo Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <!-- Centered and Brown Colored Title -->
+            <h1 style="text-align: center; color: brown;">GIANCARLO RESUME</h1>
+            <p style="text-align: center;">18 Years Old | 1st Year Programmer</p>
+        </header>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: giancarlo@email.com</p>
+            <p>Phone: 09129363559</p>
+            <p>LinkedIn: linkedin.com/in/giancarlo</p>
+            <p>GitHub: github.com/giancarlo</p>
+        </section>
+
+        <!-- Objective Section -->
+        <section class="objective">
+            <h2>Objective</h2>
+            <p>Motivated and passionate first-year student with a keen interest in programming and technology. Looking to apply my growing skills in coding, problem-solving, and software development in real-world applications. Eager to learn and grow in a professional environment.</p>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>University of Cebu - UCLM</strong> – Bachelor of Science in Computer Science</p>
+            <p>Expected Graduation: 2028</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming Languages: Python, Java, C++</li>
+                <li>Web Development: HTML, CSS, JavaScript</li>
+                <li>Software: Visual Studio Code, Git, MySQL</li>
+                <li>Problem Solving and Algorithms</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>Projects</h2>
+            <p><strong>Personal Website</strong> – A simple portfolio website built with HTML, CSS, and JavaScript to showcase my skills and projects.</p>
+            <p><strong>Task Manager</strong> – A to-do list app built in Python to manage daily tasks. <a href="https://github.com/giancarlo" target="_blank">GitHub Link</a></p>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="work-experience">
+            <h2>Work Experience</h2>
+            <p><strong>Internship (Summer 2024)</strong> – Worked as a programming intern at [Company Name], assisting with coding tasks, debugging, and software testing.</p>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <p>Last Updated: September 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
