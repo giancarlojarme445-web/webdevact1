@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weekly Class Schedule</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 5px;
+      background-color: #ffffffdc;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+    }
+    th, td {
+      border: 1px solid #3422d4;
+      padding: 5px;
+      text-align: center;
+    }
+    th {
+      background-color: #ffffff;;
+    }
+    caption {
+      font-size: 2%;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    tr:nth-child(even) td {
+      background-color: #ffffff;
+    }
+    td#red{
+background-color: #ec0000;
+    }
+    h1#TRES{
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <h1 id="TRES"> Giancarlo Class Schedule</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>07:30 - 08:30</td><td>Socio 101</td><td>Entrep</td><td>Socio 101</td><td>Entrep</td><td>Socio</td></tr>
+      <tr><td>08:30 - 09:30</td><td>IntCom</td><td>Math101</td><td>IntCom</td><td>Math101</td><td>IntCom</td></tr>
+      <tr><td>09:30 - 10:30</td><td>ComProg</td><td>WebDev</td><td>ComProg</td><td>WebDev</td><td>ComProg</td></tr>
+      <tr><td>11:30 - 12:30</td><td>IntCom</td><td>WebDev</td><td>IntCom</td><td>WebDev</td><td>IntCom</td></tr>
+      <tr><td>12:30 - 01:30</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td><td>PE</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td></tr>
+      <tr><td>02:30 - 3:30</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td></tr>
+      <tr><td>03:30 - 04:30</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td></tr>
+      <tr><td>04:30 - 05:30</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td><td id="red">NO CLASS</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>
