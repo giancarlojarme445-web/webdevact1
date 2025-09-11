@@ -1,0 +1,98 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+char vehicle;
+int hour_entered, minute_entered, hour_left, minute_left;
+
+printf("\nType of vehicle (C for car, B for bus, T for truck)? ");
+scanf("%c", &vehicle);
+printf("Hour vehicle entered lot( between 0 - 24)? ");
+scanf("%d", &hour_entered);
+printf("Minute vehicle entered lot( between 0 - 60)? ");
+scanf("%d", &minute_entered);
+printf("Hour vehicle left lot( between 0 - 24)? ");
+scanf("%d", &hour_entered);
+printf("Minute vehicle left lot( between 0 - 60)? ");
+scanf("%d", &minute_entered);
+
+char *vehicle_name;
+int park_hour, park_minute, rounded_total;
+int adjusted_hour_left = hour_left, adjusted_minute_left = minute_left;
+float total_charge;
+
+if (minute_entered > minute_left){
+        adjusted_minute_left += 60;
+        adjusted_hour_left -=1;
+
+}
+
+park_hour = adjusted_hour_left - hour_entered;
+park_minute = adjusted_minute_left - minute_entered;
+
+if (park_minute > 1){
+    rounded_total = park_hour + 1;
+}
+
+else{
+    rounded_total = park_hour;
+}
+
+switch (vehicle) {
+case 'c':
+case 'C':
+     vehicle_name = "Car";
+     if (rounded_total <=3){
+        total_charge = 0;
+
+     }
+     else if (rounded_total > 3){
+        total_charge = rounded_total * 1.50;
+     }
+    break;
+
+    case 'b':
+    case 'B':
+     vehicle_name = "Bus";
+     if (rounded_total <=2){
+        total_charge = rounded_total * 1.00;
+
+
+
+     }
+     else if (rounded_total > 2){
+        total_charge = rounded_total * 2.30;
+     }
+     break;
+
+     case 't':
+     case 'T':
+     vehicle_name = "Truck";
+     if (rounded_total <=1){
+        total_charge = rounded_total * 2.00;
+
+
+
+     }
+     else if (rounded_total > 1){
+        total_charge = rounded_total * 3.70;
+     }
+     break;
+
+
+     }
+         system("cls");
+
+         printf("\n%29s\n\n", "PARKING LOT CHARGE");
+         printf("Type of vehicle: %s\n", vehicle_name);
+         printf("\n%-30s %02d : %02d", "TIME-IN", hour_entered, minute_entered);
+         printf("\n%-30s %02d : %02d", "TIME-out", hour_left, minute_left);
+         printf("\n%38s", "__________");
+         printf("\n%-32s %02d:%02d", "PARKING TIME",park_hour, park_minute);
+         printf("\n-35s %02d", "ROUNDED TOTAL", rounded_total);
+         printf("\n%38s", "________");
+         printf("\nTOTAL CHARGE %20S%5.2f\n\n\n\n","$",total_charge);
+
+         return 0;
+     }
+
